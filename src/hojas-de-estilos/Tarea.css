@@ -1,0 +1,47 @@
+.tarea-contenedor{
+  width: 500px;
+  height: 65px; /*la tarea puede tener un texto muy largo y hay que extender la altura por si a caso ocurre*/
+  background-color: #1b1b32;
+  margin: 5px 0; /* ajustar posicion de todo*/
+  padding: 8px 15px 8px 20px; /*ajustar contenido*/
+  display: flex; /* c */
+  justify-content: space-between; /* para que los elementos de distrinuyan */
+  align-items: center; /* alinear verticalmente en el centro */
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+
+.tarea-contenedor:nth-child(3n +1){
+  background-color: #1b1b32;
+}
+.tarea-contenedor:nth-child(3n +2){
+  background-color: #2a2a40;
+}
+.tarea-contenedor:nth-child(3n +3){
+  background-color: #3b3b4f;
+}
+
+.tarea-contenedor.completada {
+  background-color: purple;
+  text-decoration: line-through;
+}
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere; /* el texto es muy largo, el texto se cortara y seguira hacia abajo, se complemente con heigh-min*/
+
+}
+/*.tarea-icono-contenedor{
+
+}*/
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+
